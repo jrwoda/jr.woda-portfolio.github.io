@@ -52,11 +52,11 @@ section {
   top: 0;
   width: 100%;
   color: #fff;
-  font-size: 5em;
+  font-size: 4em;
   font-weight: bold;
   font-style: italic;
   top: 350px;
-  left: 65%;
+  left: 55%;
   transform: translate(-50%, 0);
   opacity: 0;
   transition: 0.5s;
@@ -104,7 +104,7 @@ section {
   top: 55%;
   left: 50%;
   transform: translate3d(-50%, -53%, 80px);
-  max-width: 350px;
+  max-width: 300px;
   transition: 0.5s;
   z-index: 3;
 }
