@@ -1,0 +1,114 @@
+.jumbotron {
+  padding-top: 5rem;
+  background-color: #e2edff;
+}
+
+#projects {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+#gallery .row > * {
+  padding: 0;
+}
+
+/* My Camera Section */
+.camera-box {
+  position: relative;
+  background-color: #0d6efd;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.camera-box::before {
+  content: "MY";
+  position: absolute;
+  color: #fff;
+  font-size: 5em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.camera-box:hover::before {
+  opacity: 0.5;
+}
+
+.camera-box::after {
+  content: "CAMERA";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 5em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 65%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.camera-box:hover::after {
+  opacity: 0.5;
+}
+
+.camera-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.camera-box:hover .camera-name {
+  top: 35px;
+  opacity: 1;
+}
+
+.camera-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.camera-box:hover .camera-detail-button {
+  opacity: 1;
+  bottom: 10px;
+}
+
+.camera-img {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate3d(-50%, -53%, 80px);
+  max-width: 350px;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.camera-box:hover .camera-img {
+  transform: translate3d(-50%, -53%, 100px) rotate(7deg) scale(1.5);
+}
